@@ -1,0 +1,21 @@
+CREATE TABLE candy_store (id INTEGER PRIMARY KEY, item TEXT, dollar_price INTEGER, quantity INTEGER, review TEXT);
+
+INSERT INTO candy_store VALUES (1, "Snickers", 1, 10, "Delicious");
+INSERT INTO candy_store VALUES (2, "Reeces", 5, 10, "Mid");
+INSERT INTO candy_store VALUES (3, "Lolipops", 2, 10, "As expected");
+INSERT INTO candy_store VALUES (4, "Gum", 5, 8, "Chewy");
+INSERT INTO candy_store VALUES (5, "Taffy", 1, 20, "Very chewy");
+INSERT INTO candy_store VALUES (6, "Pop rocks", 3, 11, "Popping");
+INSERT INTO candy_store VALUES (7, "3 Musketeers", 10, 15, "Fluffy");
+INSERT INTO candy_store VALUES (8, "Baby Ruth", 4, 8, "Nutty");
+INSERT INTO candy_store VALUES (9, "Butterfinger", 9, 10, "Crunchy");
+INSERT INTO candy_store VALUES (10, "Candy Corn", 4, 10, "Divisive");
+INSERT INTO candy_store VALUES (11, "Jelly Belly", 10, 15, "Flavorful");
+INSERT INTO candy_store VALUES (12, "Kit Kat", 4, 10, "Crispy");
+INSERT INTO candy_store VALUES (13, "Jolly Rancher", 1, 30, "Juicy");
+INSERT INTO candy_store VALUES (14, "Tootsie Roll:", 1, 100, "Classic");
+INSERT INTO candy_store VALUES (15, "Swedish Fish", 5, 11, "Chewy");
+
+SELECT * FROM candy_store ORDER BY dollar_price;
+SELECT id, item, quantity FROM candy_store ORDER BY quantity;
+SELECT sum(quantity) FROM candy_store;
